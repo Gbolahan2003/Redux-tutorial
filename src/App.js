@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector';
 import Test1 from './components/Test1';
 import Counter1 from './hooks/Counter1';
+import Counter2 from './hooks/Counter2';
 
 
 export const TestContext1 = React.createContext()
@@ -31,7 +32,8 @@ hello world
 <TestContext1.Provider value={value}>
 <Test1/>
 </TestContext1.Provider>
-<Counter1/>
+{/* <Counter1/> */}
+<Counter2/>
     </div>
   );
 }
