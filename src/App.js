@@ -7,6 +7,7 @@ import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector';
 import Test1 from './components/Test1';
 import Counter1 from './hooks/Counter1';
 import Counter2 from './hooks/Counter2';
+import Counter3 from './hooks/Counter3';
 
 
 export const TestContext1 = React.createContext()
@@ -20,7 +21,7 @@ const [value, setValue] = React.useState(1)
 
   return (
     <div className="App">
-hello world
+{/* hello world
 <h1>counter {counter}</h1>
 <button onClick={()=> {
   dispatch(increment(6))
@@ -28,12 +29,13 @@ hello world
 }}>+</button>
 <button onClick={()=> dispatch(decrement())}>-</button>
 
-{isLogged?<h3>valuable information i  shouldnt see</h3>:''}
+{isLogged?<h3>valuable information i  shouldnt see</h3>:''} */}
 <TestContext1.Provider value={value}>
 <Test1/>
 </TestContext1.Provider>
 {/* <Counter1/> */}
-<Counter2/>
+{/* <Counter2/> */}
+<Counter3/>
     </div>
   );
 }
