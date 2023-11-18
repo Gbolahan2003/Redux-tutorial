@@ -13,6 +13,7 @@ import ComponentB from './components/ComponentB';
 import ComponentC from './components/ComponentC';
 import DataFetching1 from './components/DataFetching1';
 import DataFetching2 from './components/DataFetching2';
+import FocusInput from './components/FocusInput';
 
 
 export const TestContext1 = React.createContext()
@@ -65,8 +66,10 @@ const [count, dispatch] = useReducer(reducer, initialState)
 <ComponentC/> */}
 <DataFetching1/>
 <DataFetching2/>
+<FocusInput/>
     </div>
   </countContext1.Provider>
+  
   );
 }
 
