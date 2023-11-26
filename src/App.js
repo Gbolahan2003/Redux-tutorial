@@ -18,6 +18,7 @@ import ClassTimer from './components/ClassTimer';
 import Doctitle from './components/Doctitle';
 import Doctitle2 from './components/Doctitle2';
 import CounterOne from './components/CounterOne';
+import Input from './Inputs/Input';
 
 
 export const TestContext1 = React.createContext()
@@ -68,13 +69,14 @@ const [count, dispatch] = useReducer(reducer, initialState)
 {/* <ComponentA/>
 <ComponentB/>
 <ComponentC/> */}
-<DataFetching1/>
+{/* <DataFetching1/>
 <DataFetching2/>
 <FocusInput/>
 <ClassTimer/>
 <Doctitle/>
 <Doctitle2/>
-<CounterOne/>
+<CounterOne/> */}
+<Input/>
     </div>
   </countContext1.Provider>
   
